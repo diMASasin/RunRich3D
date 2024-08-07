@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Low_poly_interior
-  m_Shader: {fileID: 4800000, guid: 2132857be8f1c914a9bde1ae9af23640, type: 3}
+  m_Shader: {fileID: 4800000, guid: 282fd4ea3f4763849a0f194ad1a207ba, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
