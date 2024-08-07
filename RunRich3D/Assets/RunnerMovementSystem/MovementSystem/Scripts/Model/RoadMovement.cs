@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 namespace RunnerMovementSystem.Model
 {
-    internal class RoadMovement : IMovement
+    public class RoadMovement : IMovement
     {
         private MovementBehaviour _movementBehaviour;
         private RoadSegment _roadSegment;

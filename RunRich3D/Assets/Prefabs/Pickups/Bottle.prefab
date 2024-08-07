@@ -9869,6 +9869,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6855425049273507385}
+  - component: {fileID: 5814900445357761534}
+  - component: {fileID: 3911616436709965552}
   m_Layer: 0
   m_Name: Bottle
   m_TagString: Untagged
@@ -9894,3 +9896,37 @@ Transform:
   - {fileID: 567215466311300480}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5814900445357761534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6669013032407897203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3639c86143084aae9a052cea07aa6c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _points: -5
+--- !u!135 &3911616436709965552
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6669013032407897203}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}

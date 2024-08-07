@@ -2,6 +2,6 @@ namespace PlayerSystem.StateMachine
 {
     public interface IPlayerStateSwitcher
     {
-        void SwitchState<T>() where T : IPlayerState;
+        void SwitchState<T>() where T : IGameState;
     }
 }

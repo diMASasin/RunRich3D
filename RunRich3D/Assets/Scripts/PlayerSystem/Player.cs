@@ -1,28 +1,67 @@
-using PlayerSystem.StateMachine;
-using PlayerSystem.StateMachine.States;
 using RunnerMovementSystem;
 using RunnerMovementSystem.Examples;
 using UnityEngine;
+using WalletSystem;
 
 namespace PlayerSystem
 {
     public class Player : MonoBehaviour
     {
         [SerializeField] private PlayerAnimations _animations;
-        [SerializeField] private MouseInput _mouseInput;
         [SerializeField] private MovementSystem _movementSystem;
+        [SerializeField] private GameObject _currentSkin;
         
-        private PlayerStateMachine _stateMachine; 
+        private IInput _input;
         
-        private void Start()
+        public Wallet Wallet { get; private set; }
+
+        public void Init(Wallet wallet, IInput input)
         {
-            _stateMachine = new DebugPlayerStateMachine(_animations, _mouseInput, _movementSystem);
-            _stateMachine.SwitchState<Idle>();
+            _input = input;
+            Wallet = wallet;
+            
+            _animations.Init(Wallet);
+            
+            Wallet.LevelIncreased += OnLevelIncreased;
         }
 
         private void Update()
         {
-            _stateMachine.Tick();
+            _input.TryStartMove();
+            
+            if(_input.IsMoved == false)
+                return;
+
+            _animations.PlayAnimation(PlayerAnimations.SadWalk);
+            float movementOffset = _input.GetMovementOffset();
+            _movementSystem.SetOffset(movementOffset);
+            _movementSystem.MoveForward();
+        }
+
+        private void OnDestroy()
+        {
+            Wallet.LevelIncreased -= OnLevelIncreased;
+        }
+
+        private void OnLevelIncreased(RichnessLevel richnessLevel)
+        {
+            _currentSkin.SetActive(false);
+            _currentSkin = richnessLevel.Skin;
+            _currentSkin.SetActive(true);
+            
+            _animations.PlayAnimation(PlayerAnimations.Spin);
+        }
+
+        public void Celebrate()
+        {
+            _movementSystem.enabled = false;
+            _animations.PlayAnimation(PlayerAnimations.Celebrate);
+        }
+
+        public void Die()
+        {
+            _movementSystem.enabled = false;
+            _animations.PlayAnimation(PlayerAnimations.Die);
         }
     }
 }

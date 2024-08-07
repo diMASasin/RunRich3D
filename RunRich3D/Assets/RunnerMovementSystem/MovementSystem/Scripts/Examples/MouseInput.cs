@@ -50,18 +50,19 @@ namespace RunnerMovementSystem.Examples
                 _saveOffset = _roadMovement.Offset;
                 _mousePosition = Input.mousePosition;
                 IsMoved = true;
-                
                 MovementStarted?.Invoke();
             }
         }
 
-        public void TryChangePosition()
+        public float GetMovementOffset()
         {
             if (Input.GetMouseButton(0))
             {
                 var offset = Input.mousePosition - _mousePosition;
-                _roadMovement.SetOffset(_saveOffset + offset.x * _sensitivity);
+                return _saveOffset + offset.x * _sensitivity;
             }
+
+            return 0;
         }
 
         public void TryStopMove()
@@ -75,10 +76,12 @@ namespace RunnerMovementSystem.Examples
 
     public interface IInput
     {
+        bool IsMoved { get; }
+
         event Action MovementStarted;
         
         void TryStartMove();
-        void TryChangePosition();
+        float GetMovementOffset();
         public void TryStopMove();
     }
 }

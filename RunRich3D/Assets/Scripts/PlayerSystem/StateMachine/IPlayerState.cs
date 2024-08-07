@@ -1,6 +1,6 @@
 namespace PlayerSystem.StateMachine
 {
-    public interface IPlayerState : ITickablePlayerState
+    public interface IGameState : ITickablePlayerState
     {
         void Enter();
         void Exit();

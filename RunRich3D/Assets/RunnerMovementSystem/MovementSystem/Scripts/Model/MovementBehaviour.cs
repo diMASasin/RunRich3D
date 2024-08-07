@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace RunnerMovementSystem.Model
 {
-    internal class MovementBehaviour
+    public class MovementBehaviour
     {
         private Transform _targetTransform;
         private PathSegment _pathSegment;
