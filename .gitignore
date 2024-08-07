@@ -70,3 +70,7 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+RunRich3D/Library/Artifacts/
+RunRich3D/Temp/ProcessJobs/b8613a84801a46c691ba1681b66ddf56.layout
+RunRich3D/Temp/FSTimeGet-e3602dd1c5e6bc741949b39ac14f36fa
+RunRich3D/Temp/
