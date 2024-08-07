@@ -347,6 +347,11 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/PathCreator.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/PathCreatorEditor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/UniTask.Addressables.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/UniTask.DOTween.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/UniTask.Linq.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/UniTask.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/UniTask.TextMeshPro.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.PlasticSCM.Editor.ref.dll"
@@ -375,6 +380,11 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/PathCreator/Examples/Scripts/Editor/PathSceneToolEditor.cs"
+"Assets/RunnerMovementSystem/MovementSystem/Scripts/Editor/PathConnectorEditor.cs"
+"Assets/RunnerMovementSystem/MovementSystem/Scripts/Editor/RoadSegmentEditor.cs"
+"Assets/RunnerMovementSystem/MovementSystem/Scripts/Editor/TransitionSegmentEditor.cs"
+"Assets/RunnerMovementSystem/Tools/Scripts/Editor/PathObjectEditor.cs"
+"Assets/RunnerMovementSystem/Tools/Scripts/Editor/PathObjectRedactorEditor.cs"
 "Assets/Scripts/Level Manager/Editor/LevelManagerEditor.cs"
 -langversion:9.0
 

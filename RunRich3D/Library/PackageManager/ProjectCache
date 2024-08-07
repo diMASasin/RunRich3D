@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638586087861488201
-    m_Hash: 3937284993
+      ticks: 638586243583898900
+    m_Hash: 551043611
   m_LockFileStatus:
     m_FilePath: C:/Unity Projects/RunRich3D/RunRich3D/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638586087861513543
-    m_Hash: 2440159917
+      ticks: 638586243583933703
+    m_Hash: 4277518689
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -22,6 +22,62 @@ m_LocalPackages:
 m_ProjectPath: C:/Unity Projects/RunRich3D/RunRich3D/Packages
 m_EditorVersion: 2022.3.22f1 (887be4894c44)
 m_ResolvedPackages:
+- packageId: com.cysharp.unitask@https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask
+  testable: 0
+  isDirectDependency: 1
+  version: 2.5.5
+  source: 5
+  resolvedPath: C:\Unity Projects\RunRich3D\RunRich3D\Library\PackageCache\com.cysharp.unitask@f057abff0f
+  assetPath: Packages/com.cysharp.unitask
+  name: com.cysharp.unitask
+  displayName: UniTask
+  author:
+    name: Cysharp, Inc.
+    email: 
+    url: https://cysharp.co.jp/en/
+  category: Task
+  type: 
+  description: Provides an efficient async/await integration to Unity.
+  status: 0
+  errors: []
+  versions:
+    all: []
+    compatible: []
+    recommended: 
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - async/await
+  - async
+  - Task
+  - UniTask
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.collab-proxy@2.4.4
   testable: 0
   isDirectDependency: 1
